@@ -1,0 +1,33 @@
+﻿@page
+@model WebApp.Pages.ListUsersModel
+@{
+}
+<script src="~/js/pages/user.js"></script>
+
+<div class="bs-docs-section">
+	<br />
+	<table id="TblUsers" class="display" style="width:100%">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>LastName</th>
+				<th>Email</th>
+				<th>Phone Number</th>
+				<th>BirthDate</th>
+				<th>OwnedBy</th>
+			</tr>
+		</thead>
+	</table>
+	<br />
+</div>
+<div class="form-group">
+	<label for="exampleInputEmail1" class="form-label mt-4">Enter user Id</label>
+	<input type="text" class="form-control" id="txtIdUser" aria-describedby="emailHelp" required>
+</div>
+<br />
+<div class="form-group">
+	<button id="btnUpdate" type="button" class="btn btn-outline-info">Update</button>
+	<button id="btnDelete" type="button" class="btn btn-outline-danger">Delete</button>
+</div>
+

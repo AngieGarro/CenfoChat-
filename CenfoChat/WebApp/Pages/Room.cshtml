@@ -1,0 +1,124 @@
+﻿@page
+@model WebApp.Pages.RoomModel
+@{
+}
+<script src="~/js/pages/room.js"></script>
+<br />
+<h3>CenfoChat Server - APG</h3>
+<br />
+<div class="bs-docs-section">
+
+	<table id="TblRooms" class="display" style="width:100%">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Room Name</th>
+				<th>Description</th>
+				<th>Room Creator</th>
+				<th>Created Date</th>
+				<th>User Name</th>
+				<th>Status</th>
+				<th>Count User</th>
+				<th>Room Theme</th>
+				<th>Image</th>
+				<th>UltimateDate</th>
+			</tr>
+		</thead>
+	</table>
+	<br />
+	<div class="form-group">
+		<label class="form-label mt-4">Id Room - Enter the Id</label>
+		<input type="text" class="form-control" id="txtId" aria-describedby="emailHelp" placeholder="Id your room" required>
+	</div>
+	<br />
+	<div class="form-group">
+		<button id="btnUpdate" type="button" class="btn btn-outline-info">Update</button>
+		<button id="btnDelete" type="button" class="btn btn-outline-danger">Delete</button>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="bs-component">
+				<form>
+					<fieldset>
+						<br />
+						<legend>Create Room</legend>
+						<div class="form-group">
+							<button id="btnSend" type="button" class="btn btn-outline-success">Submit</button>
+						</div>
+						<br />
+						<h5>Enter Requested Data</h5>
+						<div>
+							<div class="form-group">
+							</div>
+							<label class="form-label mt-4">Room Name</label>
+							<input type="text" class="form-control" id="txtRName" aria-describedby="emailHelp" placeholder="Enter a room name" required>
+						</div>
+
+						<div>
+							<div class="form-group">
+							</div>
+							<label class="form-label mt-4">Descriptions</label>
+							<textarea class="form-control" id="txtRDescript" rows="3"></textarea>
+						</div>
+
+						<div>
+							<div class="form-group">
+							</div>
+							<label class="form-label mt-4">Status</label>
+							<input type="text" class="form-control" id="txtRStatus" aria-describedby="emailHelp" placeholder="Enter...status" required>
+						</div>
+
+						<div>
+							<div class="form-group">
+							</div>
+							<label class="form-label mt-4">Room Creator</label>
+							<input type="text" class="form-control" id="txtRCreator" aria-describedby="emailHelp" placeholder="Who creates it..." required>
+						</div>
+
+						<div>
+							<div class="form-group">
+							</div>
+							<label class="form-label mt-4">Count User</label>
+							<input type="number" class="form-control" id="txtRCount" aria-describedby="emailHelp" required>
+						</div>
+
+						<div>
+							<div class="form-group">
+							</div>
+							<label class="form-label mt-4">Room Theme</label>
+							<input type="text" class="form-control" id="txtRTheme" aria-describedby="emailHelp" placeholder="Which is the topic..." required>
+						</div>
+
+						<div>
+							<div class="form-group">
+							</div>
+							<label class="form-label mt-4">Image</label>
+							<input type="text" class="form-control" id="txtRImage" aria-describedby="emailHelp" placeholder="Add Image..." required>
+						</div>
+
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="bs-docs-section">
+			<br />
+			<h4>List Users</h4>
+			<br />
+			<table id="TblUsersSC" class="display" style="width:100%">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Name</th>
+						<th>LastName</th>
+						<th>Email</th>
+						<th>Phone Number</th>
+						<th>BirthDate</th>
+						<th>OwnedBy</th>
+					</tr>
+				</thead>
+			</table>
+			<br />
+		</div>
+	</div>
+</div>

@@ -1,0 +1,50 @@
+﻿@page
+@model WebApp.Pages.CreateUsersModel
+@{
+}
+<script src="~/js/pages/user.js"></script>
+
+<div class="row">
+	<div class="col-lg-6">
+		<div class="bs-component">
+			<form>
+				<fieldset>
+					<br />
+					<h3>Create User Page</h3>
+					<br />
+					<legend>Register User</legend>
+					<br />
+					<div class="form-group">
+						<button id="btnCreate" type="button" class="btn btn-outline-success">Submit</button>
+					</div>
+					<br />
+					<h5>Enter Requested Data</h5>
+					<div class="form-group">
+						<label for="exampleInputEmail1" class="form-label mt-4">Name</label>
+						<input type="text" class="form-control" id="txtNameUser" aria-describedby="emailHelp" placeholder="Enter your Name" required>
+					</div>
+
+					<div class="form-group">
+						<label for="exampleInputEmail1" class="form-label mt-4">Last Name</label>
+						<input type="text" class="form-control" id="txtLastName" aria-describedby="emailHelp" placeholder="Enter your Last Name" required>
+					</div>
+
+					<div class="form-group">
+						<label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+						<input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+					</div>
+
+					<div class="form-group">
+						<label for="exampleInputEmail1" class="form-label mt-4">Phone Number</label>
+						<input type="text" class="form-control" id="txtPhoneNumber" aria-describedby="emailHelp" placeholder="Enter your Phone Number">
+					</div>
+
+					<div class="form-group">
+						<label for="exampleInputEmail1" class="form-label mt-4">BirthDate</label>
+						<input type="date" class="form-control" id="txtBirthDate" placeholder="Enter your BirthDate" required>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>

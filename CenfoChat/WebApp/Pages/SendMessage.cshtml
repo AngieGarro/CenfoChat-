@@ -1,0 +1,71 @@
+﻿@page
+@model WebApp.Pages.SendMessageModel
+@{
+}
+<script src="~/js/pages/message.js"></script>
+
+<br />
+<h3>CenfoChat Server - APG</h3>
+<br />
+<div class="bs-docs-section">
+	<br />
+	<table id="TblMessages" class="display" style="width:100%">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>From</th>
+				<th>To</th>
+				<th>Text</th>
+				<th>Date</th>
+				<th>Words</th>
+			</tr>
+		</thead>
+	</table>
+	<br />
+	<div class="form-group">
+		<label class="form-label mt-4">Id Message - Enter the Id to edit the data</label>
+		<input type="text" class="form-control" id="txtId" aria-describedby="emailHelp" placeholder="Id your msj" required>
+	</div>
+	<br />
+	<div class="form-group">
+		<button id="btnUpdate" type="button" class="btn btn-outline-info">Update</button>
+		<button id="btnDelete" type="button" class="btn btn-outline-danger">Delete</button>
+	</div>
+	<br />
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="bs-component">
+				<form>
+					<fieldset>
+						<legend>Send Message</legend>
+						<div class="form-group">
+							<button id="btnSend" type="button" class="btn btn-outline-success">Submit</button>
+						</div>
+						<br />
+						<h5>Enter Requested Data</h5>
+						<div>
+							<div class="form-group">
+							</div>
+							<label class="form-label mt-4">From</label>
+							<input type="text" class="form-control" id="txtFor" aria-describedby="emailHelp" placeholder="Who is the Msj from" required>
+						</div>
+
+						<div class="form-group">
+							<label class="form-label mt-4">To</label>
+							<input type="text" class="form-control" id="txtTo" aria-describedby="emailHelp" placeholder="Who is the Msj To" required>
+						</div>
+
+						<div class="form-group">
+							<label class="form-label mt-4">Text</label>
+							<textarea class="form-control" id="txtText" rows="5"></textarea>
+						</div>
+						<div class="form-group">
+							<label class="form-label mt-4">Date</label>
+							<input type="date" class="form-control" id="txtDate" placeholder="Enter your Date" required>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
